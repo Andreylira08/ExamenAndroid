@@ -9,11 +9,11 @@ plugins {
 }
 
 android {
-    namespace = "com.app.weather"
+    namespace = "com.app.examen"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.app.weather"
+        applicationId = "com.app.examen"
         minSdk = 35
         targetSdk = 36
         versionCode = 1

@@ -1,4 +1,4 @@
-package com.app.examen.presentation
+package com.app.examen
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
