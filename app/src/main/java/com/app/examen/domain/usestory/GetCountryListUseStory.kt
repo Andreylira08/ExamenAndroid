@@ -7,6 +7,9 @@ import kotlinx.coroutines.flow.flow
 import com.app.examen.domain.common.Result
 import com.app.examen.domain.model.Country
 
+
+// El UseStory no crea el repository, lo recibe ya creado.
+// Es como un restaurante que no fabrica sus ingredientes, sino que los recibe.
 class GetCountryListUseStory
 @Inject
 constructor(
