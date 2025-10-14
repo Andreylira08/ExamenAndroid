@@ -27,7 +27,8 @@ fun BotonTexto(onDismiss: () -> Unit) {
                     - CountryRepository define cómo obtener países
                     
                     Estrategia de guardado de preferencias
-                    - 
+                    - Implemente cache local para almacenar el ultimo país visitado, en el homescreen
+                    - Se encuentra la funcion que llama si se cuenta con cache almacenado
                     
                     Búsqueda
                     - Filtramos países por nombre que se pasa como common desde la API
