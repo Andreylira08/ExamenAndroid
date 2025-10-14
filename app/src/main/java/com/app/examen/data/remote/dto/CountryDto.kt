@@ -7,7 +7,7 @@ data class CountryDto(
 
     @SerializedName("name") val name: NameDto,
 
-    @SerializedName("currencies") val currencies: CurrencyDto,
+    @SerializedName("currencies") val currencies: Map<String, CurrencyDto>?,
 
     @SerializedName("capital") val capital: List<String>?,
 

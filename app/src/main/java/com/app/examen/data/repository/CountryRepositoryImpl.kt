@@ -12,6 +12,7 @@ class CountryRepositoryImpl @Inject constructor(
 ) : CountryRepository {
 
     override suspend fun getCountryList(): List<Country> {
+
         val response = api.getCountryList()
         return response.map { it.toDomain() }
     }

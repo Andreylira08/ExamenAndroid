@@ -19,9 +19,9 @@ class CountryDetailViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(CountryDetailUiState())
     val uiState: StateFlow<CountryDetailUiState> = _uiState.asStateFlow()
 
-    fun getCountry(id: String) {
+    fun getCountry(name: String) {
         viewModelScope.launch {
-            getCountryUseStory(id).collect { result ->
+            getCountryUseStory(name).collect { result ->
                 _uiState.update { state ->
                     when (result) {
                         is Result.Loading -> state.copy(

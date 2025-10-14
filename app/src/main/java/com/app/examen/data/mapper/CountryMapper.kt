@@ -5,12 +5,12 @@ import com.app.examen.domain.model.Country
 
 fun CountryDto.toDomain(): Country {
     val nativeNameValue = name.nativeName?.values?.firstOrNull()?.official ?: "N/A"
-    val coinValue = currencies.name
+    val coinValue = currencies?.values?.firstOrNull()?.name ?: "N/A"
     val capitalValue = capital?.firstOrNull() ?: "N/A"
     val continentValue = continents?.firstOrNull() ?: "N/A"
 
     return Country(
-        common = name.common,
+        name = name.common,
         official = name.official,
         nativeName = nativeNameValue,
         coin = coinValue,
