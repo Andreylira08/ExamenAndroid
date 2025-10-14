@@ -14,6 +14,7 @@ import androidx.compose.material3.Tab
 import androidx.compose.material3.TabRow
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -35,6 +36,17 @@ fun HomeScreen(
     var showDialog by remember { mutableStateOf(false) }
     val tabs = listOf("Country List", "Search")
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
+    val navigationEvent by viewModel.navigationEvent.collectAsStateWithLifecycle()
+
+
+    // Observar el evento de navegación al último país guardado, si hay un
+    //país guardado, navega automáticamente a su detailcotent
+    LaunchedEffect(navigationEvent) {
+        navigationEvent?.let { countryName ->
+            onCountryClick(countryName)
+            viewModel.onNavigationHandled()
+        }
+    }
 
     if (showDialog) {
         BotonTexto(onDismiss = { showDialog = false })

@@ -27,10 +27,10 @@ fun BotonTexto(onDismiss: () -> Unit) {
                     - CountryRepository define cómo obtener países
                     
                     Estrategia de guardado de preferencias
-                    - Guardamos datos locales del usuario
+                    - 
                     
                     Búsqueda
-                    - Filtramos países en memoria por nombre, oficial y capital
+                    - Filtramos países por nombre que se pasa como common desde la API
                     """.trimIndent(),
                     modifier = Modifier.padding(16.dp)
                 )
