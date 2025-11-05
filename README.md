@@ -24,4 +24,4 @@ Finalmente, en las etapas de prueba y despliegue, me aseguré de que la aplicaci
 
 Este enfoque permitió mantener un ciclo iterativo de mejora continua, asegurando que el producto final fuera estable, funcional y alineado con los requisitos planteados desde el inicio.
 
-jiji
+jijijojojo
