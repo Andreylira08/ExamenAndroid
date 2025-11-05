@@ -23,3 +23,5 @@ En la etapa de ideación y prototipado, integré todo lo definido y analizado, d
 Finalmente, en las etapas de prueba y despliegue, me aseguré de que la aplicación cumpliera con todos los requisitos funcionales del examen. Una vez verificado que se cumplían los objetivos y completados los puntos extra del proyecto, se procedió a crear el Pull Request y preparar la aplicación para su despliegue.
 
 Este enfoque permitió mantener un ciclo iterativo de mejora continua, asegurando que el producto final fuera estable, funcional y alineado con los requisitos planteados desde el inicio.
+
+jiji
